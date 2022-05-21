@@ -12,7 +12,7 @@ resource "google_cloud_run_service" "default" {
         image = var.application_image
         ports {
           name = "http1"
-          container_port = "3000"
+          container_port = var.application_port
           protocol = "TCP"
         }
       }

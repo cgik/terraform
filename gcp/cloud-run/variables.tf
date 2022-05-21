@@ -13,6 +13,11 @@ variable "application_image" {
   type        = string
 }
 
+variable "application_port" {
+  description = "The for used to connect to the applicaiton."
+  type        = string
+}
+
 variable "url" {
   description = "The custom URL for the cloud run application."
   type        = string
